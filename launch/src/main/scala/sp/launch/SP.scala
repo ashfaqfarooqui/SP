@@ -41,6 +41,10 @@ object SP extends App {
   import sp.merger._
   serviceHandler ! RegisterService("ProductAbilityMerger",
     system.actorOf(ProductAbilityMerger.props(modelHandler), "ProductAbilityMerger"))
+    
+    import sp.nina._
+    serviceHandler ! RegisterService("NinaService",
+    system.actorOf(NinaService.props, "NinaService"))
 
 
 

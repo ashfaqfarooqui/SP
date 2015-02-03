@@ -98,6 +98,18 @@ angular.module('spGuiApp')
         parse: proposition
       }})
   };
+  
+  
+    //TODO: Handle services in a general way. Retrieve possible services from server
+  factory.ninaComm = function() {
+    return $http({
+      method: 'POST',
+      url: 'api/services/NinaService',
+      data: {
+        model: factory.activeModel.model
+      }})
+  };
+
 
   factory.findRelations = function(ops, initState, groups, goalState) {
     return $http({

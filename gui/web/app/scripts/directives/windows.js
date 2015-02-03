@@ -46,7 +46,7 @@ angular.module('spGuiApp')
             width = 1;
           } else if(type === 'schedule') {
             height = 'small';
-          }
+          } 
 
           scope.windows.push({type: type, width: width, height: height, name: type, id: type + noOfOpenedWindows, storage: wStorage});
           sessionStorage.noOfOpenedWindows = angular.toJson(noOfOpenedWindows);

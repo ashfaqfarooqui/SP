@@ -48,7 +48,7 @@ angular.module('spGuiApp')
         factory.tabs.splice(index, 1);
       }
     };
-
+	
     factory.newWindow = function(typeOfNewWindow, dataForNewWindow) {
       factory.typeOfNewWindow = typeOfNewWindow;
       if(dataForNewWindow) {

@@ -41,11 +41,11 @@ class PropositionParserActor extends Actor  {
     } yield (model, parse)
   }
 
-      def errorMessage(attr: SPAttributes) = {
-        SPError("The request is missing parameters: \n" +
-          s"model: ${attr.getAsID("model")}" + "\n" +
-          s"parse: ${attr.getAsString("parse")}" )
-      }
+  def errorMessage(attr: SPAttributes) = {
+    SPError("The request is missing parameters: \n" +
+      s"model: ${attr.getAsID("model")}" + "\n" +
+      s"parse: ${attr.getAsString("parse")}" )
+  }
 
 }
 

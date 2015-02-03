@@ -66,6 +66,10 @@ angular.module('spGuiApp')
         controller: 'SettingsCtrl'
       });
     };
+	
+	$scope.callNina = function () {
+	  $scope.spTalker.ninaComm();
+    };
 
     document.addEventListener('invalid', (function(){
       return function(e){
