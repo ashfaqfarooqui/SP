@@ -26,7 +26,7 @@ class NinaService extends Actor {
 	    val ops = (modelHandler ? GetOperations(modelOption.get))
 	    
 
-	     
+	   
 	     ops.map {
 	      case SPIDs(ids) => {
 	        ids map println
