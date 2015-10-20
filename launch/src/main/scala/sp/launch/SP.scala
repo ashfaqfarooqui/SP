@@ -56,6 +56,13 @@ object SP extends App {
     DummySopService.transformation
   )
 
+  import sp.extensions.spLearning.HelloWorldSopService._
+        //   serviceHandler ! RegisterService("HelloWorld",
+        //     system.actorOf(HelloWorldSopService.props, "HelloWorld"),
+        //     HelloWorldSopService.specification,
+        //     HelloWorldSopService.transformation
+        // )
+  initSpLearning.initService()
 
   //  import sp.areus._
 //
