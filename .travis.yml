@@ -1,5 +1,5 @@
 language: scala
-sudo: false
+sudo: required
 jdk:
         - openjdk6
 script: 
@@ -8,6 +8,7 @@ script:
         - npm install 
         - bower install
         - gulp inject 
+        - cd ../../
         - sbt launch/pack-archive
 deploy:
         
