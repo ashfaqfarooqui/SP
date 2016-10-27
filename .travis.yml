@@ -2,8 +2,6 @@ language: scala
 sudo: false
 jdk:
         - openjdk6
-before_install:
-        - "apt-get update && sudo apt-get install -y --no-install-recommends sbt nodejs npm"
 script: 
         - cd gui/web
         - npm install -g gulp bower
