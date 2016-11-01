@@ -17,6 +17,10 @@ deploy:
   provider: releases
   api_key:
     secure: ZTa0huxlQW6mBUJ2sS7er3d9LhIcNWRldFlGKxHBRkA34KxBKDaJkauVc9Qb92n76aaY1jazlLJmt+ihyyWyoyz+RFDbSBggezl4LaWtLc83j2ZrSpQZewx6VvG+1D8IYdclUpfgoMtGjCEIp2YcqMXMziboasVSCqU7MgAhhMP9XoGvFlWXUobeEUqEVW2vUHAKatdLTOqZs4eO7yalbdFeg9Fl6ZeWCuPtKTWZW26nGVLA/lux3fyXqNxf+H2ViHiIVfRjgrgJI8mqVNigsKAO09L13lXl5nkntl85SxRmRISmKJxuVzjzpKrGHPcTpl7G1Bh9HQanmU81/vv9aQ9lFLViG/6rgjiDpReIV2bevucYO4jHLdx/XSCJ1KWE9QjbnpjHAmaOKTknyFUIUg3ErhHKGO52gHB7VLWx1ZnJJrB83NWNK6yOGUQTH0Zs755GyAcuYyWFoMF3/9sbl12L+EU0DDTDNLlEeQTtQdWnv3Kijuvb/eq5Ldc3FUHGMVMSXAbx2CD3akWSHzl7PJy40Jauhut9EsidbASzczv4ztOsl7oDGYvktQxf1m0aOvV0Jo5bQHKSPfnF9UkU4GWGbCLdaLMdDb9DufMNpGXNJJ7Yg/dRdB7gi24QLNXBvC/c6PkJFx08DbKYJN+wwAQ3F0BYbg+eQ83RSPG9YPM=
-  file: ''
+  file:
+    - "launch/target/launch-*.tar.gz"
+    - "launch/target/launch-*.zip"
   on:
     repo: ashfaqfarooqui/SP
+    tags: true
+    all_branches: true
